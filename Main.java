@@ -4,6 +4,7 @@ public class Main {
         SingleNumber challange2= new SingleNumber();
         ArrayIntersection challange3 = new ArrayIntersection();
         HappyNumber challange4 = new HappyNumber();
+        TwoSum challange5 = new TwoSum();
 
         /* int[] num1 = {1, 2, 2, 3};
         int[] num2 = {2, 2}; */
@@ -19,8 +20,16 @@ public class Main {
             System.out.println(intersectionArr[i]);
         } */
 
-        int num = 79;
+        /* int num = 79;
         boolean isHappy = challange4.isHappy(num);
-        System.out.println(isHappy); // true
+        System.out.println(isHappy); // true */
+
+        int[] numArr = {1, 5, 5, 3};
+        int target = 10;
+
+        int[] resultArr = challange5.getSum(numArr, target);
+        for (int i = 0; i < resultArr.length;i++) {
+            System.out.println(resultArr[i]);
+        }
     }
 }
