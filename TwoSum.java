@@ -1,13 +1,13 @@
 import java.util.HashMap;
 
 public class TwoSum {
-    
-    public int[] getSum (int[] numArr, int target) {
 
-        HashMap <Integer, Integer> numHashMap = new HashMap<>();
-        int[] resultArr = {0, 0};
+    public int[] getSum(int[] numArr, int target) {
 
-        for (int i = 0; i < numArr.length;i++) {
+        HashMap<Integer, Integer> numHashMap = new HashMap<>();
+        int[] resultArr = { 0, 0 };
+
+        for (int i = 0; i < numArr.length; i++) {
 
             if (numHashMap.containsKey(target - numArr[i])) {
                 resultArr[0] = i;
