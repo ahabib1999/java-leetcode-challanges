@@ -6,10 +6,9 @@ public class Main {
         HappyNumber challange4 = new HappyNumber();
         TwoSum challange5 = new TwoSum();
         IsomorphicStrings challange6 = new IsomorphicStrings();
+        MinimumIndexSum challange7 = new MinimumIndexSum();
 
-        /*
-         * int[] num1 = {1, 2, 2, 3}; int[] num2 = {2, 2};
-         */
+        // int[] num1 = {1, 2, 2, 3}; int[] num2 = {2, 2};
 
         // boolean isDuplicate = challange1.containsDuplicate(nums);
         // System.out.println(isDuplicate);
@@ -35,10 +34,19 @@ public class Main {
          * resultArr.length;i++) { System.out.println(resultArr[i]); }
          */
 
-        String s = "ab";
-        String t = "aa";
+        /*
+         * String s = "ab"; String t = "aa";
+         * 
+         * boolean isIsometric = challange6.isIsomorphic(s, t);
+         * System.out.println(isIsometric);
+         */
 
-        boolean isIsometric = challange6.isIsomorphic(s, t);
-        System.out.println(isIsometric);
+        String[] restArr1 = { "Shogun", "Tapioca Express", "Burger King", "KFC" };
+        String[] restArr2 = { "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun" };
+
+        String[] resultArr = challange7.findRestaurant(restArr1, restArr2);
+        for (int i = 0; i < resultArr.length; i++) {
+            System.out.println(resultArr[i]);
+        }
     }
 }
