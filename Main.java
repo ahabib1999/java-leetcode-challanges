@@ -7,6 +7,7 @@ public class Main {
         TwoSum challange5 = new TwoSum();
         IsomorphicStrings challange6 = new IsomorphicStrings();
         MinimumIndexSum challange7 = new MinimumIndexSum();
+        FirstUniqueCharacter challange8 = new FirstUniqueCharacter();
 
         // int[] num1 = {1, 2, 2, 3}; int[] num2 = {2, 2};
 
@@ -41,12 +42,17 @@ public class Main {
          * System.out.println(isIsometric);
          */
 
-        String[] restArr1 = { "Shogun", "Tapioca Express", "Burger King", "KFC" };
-        String[] restArr2 = { "Piatti", "The Grill at Torrey Pines", "Hungry Hunter Steakhouse", "Shogun" };
+        /*
+         * String[] restArr1 = { "Shogun", "Tapioca Express", "Burger King", "KFC" };
+         * String[] restArr2 = { "Piatti", "The Grill at Torrey Pines",
+         * "Hungry Hunter Steakhouse", "Shogun" };
+         * 
+         * String[] resultArr = challange7.findRestaurant(restArr1, restArr2); for (int
+         * i = 0; i < resultArr.length; i++) { System.out.println(resultArr[i]); }
+         */
 
-        String[] resultArr = challange7.findRestaurant(restArr1, restArr2);
-        for (int i = 0; i < resultArr.length; i++) {
-            System.out.println(resultArr[i]);
-        }
+        String givenString = "leetcode";
+        int uniqueCharIdx = challange8.getUniqChar(givenString);
+        System.out.println(uniqueCharIdx);
     }
 }
