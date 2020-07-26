@@ -8,9 +8,12 @@ public class Main {
         DuplicateZeros challenge4 = new DuplicateZeros();
         MergeSortedArrays challenge5 = new MergeSortedArrays();
         RemoveElement challenge6 = new RemoveElement();
+        RemoveDuplicates challenge7 = new RemoveDuplicates();
 
         int[] numArr1 = { 1, 2, 3, 0, 0, 0 };
         int[] numArr2 = { 2, 5, 6 };
+        int[] intArr = { 1, 0, 2, 0, 3, 0 };
+        int[] intArray = { 0, 1, 1, 2, 2, 3, 3 };
 
         // int max = challenge1.countOnes(intArr);
 
@@ -23,10 +26,13 @@ public class Main {
         // challenge5.mergeArrays(numArr1, numArr1.length - numArr2.length, numArr2,
         // numArr2.length);
 
-        int[] intArr = { 1, 0, 2, 0, 3, 0 };
-        int[] intArr2 = { 5, 3, 3, 4, 6, 0 };
-        int[] intArr3 = { 5, 2, 5 };
-        int length = challenge6.removeGivenElement(3, intArr3);
-        System.out.println(length);
+        // int length = challenge6.removeGivenElement(3, intArr);
+
+        int len = challenge7.removeDuplicates(intArray);
+        System.out.println(len);
+
+        for (int i = 0; i < len; i++) {
+            System.out.println(intArray[i]);
+        }
     }
 }
