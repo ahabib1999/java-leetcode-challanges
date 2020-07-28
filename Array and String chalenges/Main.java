@@ -7,6 +7,14 @@ public class Main {
         FindPivotIndex challenge1 = new FindPivotIndex();
 
         int pivotIdx = challenge1.getPivotIndex(intArr);
-        System.out.println(pivotIdx);
+        // System.out.println(pivotIdx);
+
+        String haystack = "ooh";
+        String needle = "hoooo";
+
+        NeedleInHaystack challenge2 = new NeedleInHaystack();
+
+        int needleIdx = challenge2.findNeedle(haystack, needle);
+        System.out.println(needleIdx);
     }
 }
