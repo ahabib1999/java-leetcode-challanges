@@ -1,9 +1,8 @@
-public class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-        next = null;
+public class ListNode<T> {
+    ListNode(T x) {
+        value = x;
     }
+
+    T value;
+    ListNode<T> next;
 }

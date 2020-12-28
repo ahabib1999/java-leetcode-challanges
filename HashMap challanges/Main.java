@@ -9,6 +9,7 @@ public class Main {
         MinimumIndexSum challange7 = new MinimumIndexSum();
         FirstUniqueCharacter challange8 = new FirstUniqueCharacter();
         ArrayIntersectionII challenge9 = new ArrayIntersectionII();
+        GroupAnagrams challenge10 = new GroupAnagrams();
 
         // int[] num1 = {1, 2, 2, 3}; int[] num2 = {2, 2};
 
@@ -57,13 +58,16 @@ public class Main {
          * challange8.getUniqChar(givenString); System.out.println(uniqueCharIdx);
          */
 
-        int[] intArr1 = { 4, 2, 2, 2 };
-        int[] intArr2 = { 4, 4 };
+        /*
+         * int[] intArr1 = { 4, 2, 2, 2 }; int[] intArr2 = { 4, 4 };
+         * 
+         * int[] resultArr = challenge9.findIntersction(intArr1, intArr2);
+         * 
+         * for (int i = 0; i < resultArr.length; i++) {
+         * System.out.println(resultArr[i]); }
+         */
 
-        int[] resultArr = challenge9.findIntersction(intArr1, intArr2);
-
-        for (int i = 0; i < resultArr.length; i++) {
-            System.out.println(resultArr[i]);
-        }
+        String[] strArr = { "eat" };
+        challenge10.groupAnagrams(strArr);
     }
 }

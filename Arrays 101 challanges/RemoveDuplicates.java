@@ -9,6 +9,10 @@ public class RemoveDuplicates {
             return 0;
         }
 
+        if (intArray.length == 1) {
+            return 1;
+        }
+
         for (int current = 0; current < intArray.length - 1; current++) {
 
             if (intArray[current] == flagVal) {

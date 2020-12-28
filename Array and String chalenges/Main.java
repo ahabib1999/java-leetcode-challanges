@@ -15,6 +15,20 @@ public class Main {
         NeedleInHaystack challenge2 = new NeedleInHaystack();
 
         int needleIdx = challenge2.findNeedle(haystack, needle);
-        System.out.println(needleIdx);
+        // System.out.println(needleIdx);
+
+        dataTypeConversions challenge3 = new dataTypeConversions();
+
+        // challenge3.conversions();
+
+        rotateimage challenge4 = new rotateimage();
+        int[][] matrix = { { 1, 2, 3, 4 }, { 5, 6, 7, 8 }, { 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
+
+        // challenge4.rotate(matrix);
+
+        CapLetter challenge5 = new CapLetter();
+        String line = "hello world";
+
+        challenge5.capitalize(line);
     }
 }
